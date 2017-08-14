@@ -1,7 +1,7 @@
 
 public class PE_prob15 {
 	public PE_prob15(){
-		System.out.println("Lattice Paths - WTF?!");
+		System.out.println("Lattice Paths - Unfinished");
 	}
 	
 	public void run(){
