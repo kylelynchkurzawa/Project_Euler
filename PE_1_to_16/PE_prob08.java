@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-public class PE_prob08 {
-	public PE_prob08(){
+public class PE_08 {
+	public PE_08(){
 		System.out.println("Largest Product in a Series");
 	}
 	

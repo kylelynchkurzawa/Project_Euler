@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class PE_prob12 {
-	public PE_prob12(){
+public class PE_12 {
+	public PE_12(){
 		System.out.println("Highest Divisable Triangular Number - Unfinished");
 	}
 	

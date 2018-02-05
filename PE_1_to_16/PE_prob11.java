@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class PE_prob11 {
-	public PE_prob11(){
+public class PE_11 {
+	public PE_11(){
 		System.out.println("Largest product in a grid");
 	}
 	

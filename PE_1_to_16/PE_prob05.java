@@ -1,7 +1,7 @@
 
-public class PE_prob05 {
+public class PE_05 {
 	
-	public PE_prob05(){
+	public PE_05(){
 		System.out.println("Smallest Multiple from 1 to X");
 	}
 	

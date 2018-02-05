@@ -1,7 +1,7 @@
 
-public class PE_prob04 {
+public class PE_04 {
 	
-	public PE_prob04(){
+	public PE_04(){
 		System.out.println("Largest Palindrome Product");
 	}
 	

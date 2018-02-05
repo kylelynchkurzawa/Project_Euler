@@ -1,6 +1,6 @@
 
-public class PE_prob15 {
-	public PE_prob15(){
+public class PE_15 {
+	public PE_15(){
 		System.out.println("Lattice Paths - Unfinished");
 	}
 	

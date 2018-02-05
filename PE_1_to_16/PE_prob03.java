@@ -1,5 +1,5 @@
-public class PE_prob03 {
-	public PE_prob03(){
+public class PE_03 {
+	public PE_03(){
 		System.out.println("Largest Prime Factor");
 	}
 	

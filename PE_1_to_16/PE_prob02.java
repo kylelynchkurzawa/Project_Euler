@@ -1,10 +1,10 @@
 
-public class PE_prob02 {
+public class PE_02 {
 	
 	private long lastVal;
 	private long secLastVal;
 	
-	public PE_prob02(){
+	public PE_02(){
 		this.lastVal = 1;
 		this.secLastVal = 2;
 		System.out.println("Sum of even fibanacci numbers");

@@ -1,6 +1,6 @@
 
-public class PE_prob14 {
-	public PE_prob14(){
+public class PE_14 {
+	public PE_14(){
 		System.out.println("Longest Collatz Sequence");
 	}
 	

@@ -1,6 +1,6 @@
 
-public class PE_prob01 {
-	public PE_prob01(){
+public class PE_01 {
+	public PE_01(){
 		System.out.println("Sum of multiples of 3 and 5");
 	}
 	

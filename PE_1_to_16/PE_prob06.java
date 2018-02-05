@@ -1,6 +1,6 @@
 
-public class PE_prob06 {
-	public PE_prob06(){
+public class PE_06 {
+	public PE_06(){
 		System.out.println("Sum Square Difference");
 	}
 	

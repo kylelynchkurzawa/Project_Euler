@@ -4,8 +4,8 @@ import java.io.FileReader;
 import java.math.BigInteger;
 import java.util.ArrayList;
 
-public class PE_prob13 {
-	public PE_prob13(){
+public class PE_13 {
+	public PE_13(){
 		System.out.println("Large Sum");
 	}
 	

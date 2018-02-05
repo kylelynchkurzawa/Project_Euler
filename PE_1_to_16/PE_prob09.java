@@ -1,6 +1,6 @@
 
-public class PE_prob09 {
-	public PE_prob09(){
+public class PE_09 {
+	public PE_09(){
 		System.out.println("Pythagorean triplet - Revisit");
 	}
 	

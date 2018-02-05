@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class PE_prob10 {
-	public PE_prob10(){
+public class PE_10 {
+	public PE_10(){
 		System.out.println("Summation of Primes - Revisit");
 	}
 	

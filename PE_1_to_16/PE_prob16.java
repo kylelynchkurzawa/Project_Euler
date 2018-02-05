@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 
-public class PE_prob16 {
-	public PE_prob16(){
+public class PE_16 {
+	public PE_16(){
 		System.out.println("Power Digit Sum");
 	}
 	
