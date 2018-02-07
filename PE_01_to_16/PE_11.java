@@ -1,9 +1,14 @@
 import java.util.ArrayList;
 
 public class PE_11 {
-	public PE_11(){
-		System.out.println("Largest product in a grid");
-	}
+	private String problem_title = "Largest product in a grid";
+    private int problem_number = 11;
+    private boolean completed_successfully = true;
+
+    public PE_11(){
+        System.out.println("Starting Project Euler Problem No. "+ problem_number +": "+problem_title);
+        System.out.println("Problem Solved: "+completed_successfully);
+    }
 	
 	public void run(){
 		/*		
@@ -28,8 +33,9 @@ public class PE_11 {
 		20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 		01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48		
 		*/
-		long start = System.currentTimeMillis();
-		System.out.println("Started at "+start);
+		long start_time, end_time, time_elapsed;
+        System.out.println("Starting Problem "+problem_number);
+        start_time = System.currentTimeMillis();
 		
 		int matrixRows = 20;
 		int matrixColumns = 20;
@@ -134,10 +140,10 @@ public class PE_11 {
 		
 		System.out.println(highest_factor_product + "\n\n" + highest_factors);
 		
-		long finish = System.currentTimeMillis();
-		long time = finish - start;
-		System.out.println("Finished at "+ finish);
-		System.out.println("Executed in "+ time);
+		end_time = System.currentTimeMillis();
+        System.out.println("Finished Problem");
+        time_elapsed = end_time - start_time;
+        System.out.println("Time taken to finish problem: "+time_elapsed);
 		
 	}
 	

@@ -3,14 +3,22 @@ public class PE_02 {
 	
 	private long lastVal;
 	private long secLastVal;
-	
-	public PE_02(){
+	private String problem_title = "Sum of even fibanacci numbers";
+    private int problem_number = 02;
+    private boolean completed_successfully = true;
+
+    public PE_02(){
 		this.lastVal = 1;
 		this.secLastVal = 2;
-		System.out.println("Sum of even fibanacci numbers");
-	}
+        System.out.println("Starting Project Euler Problem No. "+ problem_number +": "+problem_title);
+        System.out.println("Problem Solved: "+completed_successfully);
+    }
 	
 	public void run(){
+		long start_time, end_time, time_elapsed;
+        System.out.println("Starting Problem "+problem_number);
+        start_time = System.currentTimeMillis();
+		
 		long limit = 4000000;
 		long newVal = 0;
 		 
@@ -42,5 +50,10 @@ public class PE_02 {
 		}//end while
 		 
 		System.out.println("Total: "+sum);
+		
+		end_time = System.currentTimeMillis();
+        System.out.println("Finished Problem");
+        time_elapsed = end_time - start_time;
+        System.out.println("Time taken to finish problem: "+time_elapsed);
 	}
 }

@@ -1,13 +1,19 @@
 import java.math.BigInteger;
 
 public class PE_16 {
-	public PE_16(){
-		System.out.println("Power Digit Sum");
-	}
+	private String problem_title = "Power Digit Sum";
+    private int problem_number = 16;
+    private boolean completed_successfully = true;
+
+    public PE_16(){
+        System.out.println("Starting Project Euler Problem No. "+ problem_number +": "+problem_title);
+        System.out.println("Problem Solved: "+completed_successfully);
+    }
 	
 	public void run(){
-		long start = System.currentTimeMillis();
-		System.out.println("Started at "+start);
+		long start_time, end_time, time_elapsed;
+        System.out.println("Starting Problem "+problem_number);
+        start_time = System.currentTimeMillis();
 		
 		int base = 2;
 		int power = 1000;
@@ -30,10 +36,10 @@ public class PE_16 {
 		
 		System.out.println("Sum: "+sum);
 		
-		long finish = System.currentTimeMillis();
-		long time = finish - start;
-		System.out.print("Finished at ");System.out.println(finish);
-		System.out.print("Executed in ");System.out.println(time);
+		end_time = System.currentTimeMillis();
+        System.out.println("Finished Problem");
+        time_elapsed = end_time - start_time;
+        System.out.println("Time taken to finish problem: "+time_elapsed);
 	}
 }
 

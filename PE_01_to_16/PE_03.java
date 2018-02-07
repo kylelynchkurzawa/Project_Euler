@@ -1,9 +1,21 @@
 public class PE_03 {
 	public PE_03(){
-		System.out.println("Largest Prime Factor");
+		System.out.println("");
 	}
 	
+	private String problem_title = "Largest Prime Factor";
+    private int problem_number = 03;
+    private boolean completed_successfully = true;
+
+    public PE_03(){
+        System.out.println("Starting Project Euler Problem No. "+ problem_number +": "+problem_title);
+        System.out.println("Problem Solved: "+completed_successfully);
+    }
+	
 	public void run(){
+		long start_time, end_time, time_elapsed;
+        System.out.println("Starting Problem "+problem_number);
+        start_time = System.currentTimeMillis();
 		
 		long value = 600851475143L;
 		int primeNum = 0;
@@ -39,5 +51,10 @@ public class PE_03 {
 		}//end outer for
 				
 		System.out.println(primeNum);
+		
+		end_time = System.currentTimeMillis();
+        System.out.println("Finished Problem");
+        time_elapsed = end_time - start_time;
+        System.out.println("Time taken to finish problem: "+time_elapsed);
 	}
 }
