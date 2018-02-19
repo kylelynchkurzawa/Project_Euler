@@ -104,7 +104,6 @@ public class PE_35 {
     			//and we haven't found something divisible
     			//then it's a prime by mathematical law
     			else if((double)j >  bound) {
-    				//divisible = true;
     				break;
     			}
     		}
