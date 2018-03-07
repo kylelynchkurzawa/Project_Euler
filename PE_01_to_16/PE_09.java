@@ -1,7 +1,7 @@
 
 public class PE_09 {	
 	private String problem_title = "Pythagorean triplet";
-    private int problem_number = 09;
+    private int problem_number = 9;
     private boolean completed_successfully = true;
 
     public PE_09(){

@@ -65,6 +65,7 @@ public class PE_14 {
         System.out.println("Time taken to finish problem: "+time_elapsed);
 	}
 	
+	@SuppressWarnings("unused")
 	private int Halfed_X_Times(int x, int z){
 		int y = x;
 		
@@ -75,6 +76,7 @@ public class PE_14 {
 		return y;
 	}
 	
+	@SuppressWarnings("unused")
 	private int How_Many_Times_Can_Be_Halfed(int x){
 		int y = x;
 		int z = 0;

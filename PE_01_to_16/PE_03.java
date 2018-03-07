@@ -1,7 +1,4 @@
 public class PE_03 {
-	public PE_03(){
-		System.out.println("");
-	}
 	
 	private String problem_title = "Largest Prime Factor";
     private int problem_number = 03;

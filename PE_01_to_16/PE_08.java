@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class PE_08 {
 	private String problem_title = "Largest Product in a Series";
-    private int problem_number = 08;
+    private int problem_number = 8;
     private boolean completed_successfully = true;
 
     public PE_08(){
