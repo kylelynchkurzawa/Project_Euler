@@ -8,7 +8,7 @@ public class Project_Euler_Main {
 
 	public static void main(String[] args) {
 		
-		PE_42 problem = new PE_42();
+		PE_50 problem = new PE_50();
 		problem.start();
 	}
 

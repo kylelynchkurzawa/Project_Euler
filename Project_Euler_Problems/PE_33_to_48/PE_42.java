@@ -24,6 +24,7 @@ public class PE_42 {
         start_time = System.currentTimeMillis();
 
         String source_file_path = "/home/kyle/Documents/Personal-Git-Repos/my project euler/Project_Euler/Project_Euler_Problems/Problem Files/Problem_42.txt";
+        //initialize the alphabet
         HashMap<String, Integer> alphabet = new HashMap<String, Integer>();
         alphabet.put("A", 1);alphabet.put("B", 2);alphabet.put("C", 3);alphabet.put("D", 4);
         alphabet.put("E", 5);alphabet.put("F", 6);alphabet.put("G", 7);alphabet.put("H", 8);
@@ -55,6 +56,7 @@ public class PE_42 {
         System.out.println("Time taken to finish problem: "+time_elapsed);
     }
 
+    //formula for triangle numbers
     private int getTriangleNumber(int seed){
         return (seed*(seed+1))/2;
     }
@@ -121,8 +123,9 @@ public class PE_42 {
                 e.printStackTrace();
             }
         }
-
+        //split the string by commas
         String[] wordsarray = sb.toString().split(",");
+        //loop through all the words and remove quotation marks
         for(String s : wordsarray){
             words.add(s.replace("\"", ""));
         }
@@ -130,4 +133,3 @@ public class PE_42 {
         return words;
     }
 }
-
