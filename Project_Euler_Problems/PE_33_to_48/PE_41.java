@@ -2,17 +2,18 @@ package PE_33_to_48;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class PE_41 {
     private String problem_title = "Pandigital Prime";
     private int problem_number = 41;
     private boolean completed_successfully = false;
-    private ArrayList<BigInteger> pandigitalNumbers;
+    private ArrayList<String> permutations;
 
     public PE_41(){
         System.out.println("Starting Project Euler Problem No. "+ problem_number +": "+problem_title);
         System.out.println("Problem Solved: "+completed_successfully);
-        pandigitalNumbers = new ArrayList<BigInteger>();
     }
 
     public void start(){
@@ -24,15 +25,40 @@ public class PE_41 {
         //code for problem
 
         //can't make a bunch of big ints, freezes system
-        //can't make a bunch of primes, takes to long
+        //can't make a bunch of primes, takes too long
 
-        //
+        //so we should make a bunch of pandigitals?
 
-        int nth_size = 9;
-        int limit = 987654321;
+        ArrayList<Long> primes = generatePrimes((long)10000000);
+        String source = "987654321";
+        generatePermutations(source);
 
-        ArrayList<Integer> primeList = generatePrimes(limit);
-        System.out.println(primeList);
+        //sort the list of permutations
+        Collections.sort(this.permutations);
+
+        //clean the list and remove all even numbers
+        for(int i=this.permutations.size()-1; i>=0; i--){
+            if(Integer.valueOf(this.permutations.get(i))%2 == 0){
+                this.permutations.remove(i);
+            }
+        }
+
+        for(int i=this.permutations.size()-1; i>=0; i--){
+            System.out.println("Testing: "+permutations.get(i));
+//            for(Long l : primes){
+//                if(Long.valueOf(permutations.get(i)) == l){
+//                    //do nothing
+//                }
+//                else if((Long.valueOf(this.permutations.get(i)))%l == 0){
+//                    this.permutations.remove(i);
+//                    break;
+//                }
+//            }
+        }
+
+
+
+        System.out.println("Size of permutation list: "+this.permutations.size());
 
 
         end_time = System.currentTimeMillis();
@@ -41,6 +67,38 @@ public class PE_41 {
         System.out.println("Time taken to finish problem: "+time_elapsed);
     }
 
+    private void generatePermutations(String src){
+        this.permutations = new ArrayList<String>();
+        String[] source = src.split("(?!^)");
+        ArrayList<String> digits = new ArrayList<>();
+
+        for(String s : source){
+            digits.add(s);
+        }
+
+        generatePermutationsV2("", digits);
+    }
+
+    private void generatePermutationsV2(String seed, List<String> src){
+        //check if there's only one character left to iterate over
+        if(src.size() == 1){
+            for(String s : src){
+                this.permutations.add((seed.concat(s)));
+            }
+        }
+        else{
+            //choose a character to use as a base
+            for(String s : src){
+                //remove the chosen character from the src
+                List<String> editedSrc = new ArrayList<>();
+                editedSrc.addAll(src);
+                editedSrc.remove(s);
+
+                //pass into the method again with the removed letter added to the seed
+                generatePermutationsV2(seed.concat(s), editedSrc);
+            }
+        }
+    }
 
 
     private boolean isPandigital(int nth, BigInteger target){
@@ -82,20 +140,20 @@ public class PE_41 {
         return primeList;
     }
 
-    private ArrayList<Integer> generatePrimes(int upper_bound){
+    private ArrayList<Long> generatePrimes(long upper_bound){
         boolean divisible = false;
-        double bound = 0.0;
-        ArrayList<Integer> primeList = new ArrayList<Integer>();
+        double bound = 0;
+        ArrayList<Long> primeList = new ArrayList<Long>();
 
         //add two since it's the only even prime
-        primeList.add(2);
+        //primeList.add((long)2);
 
-        for(int i=3; i<upper_bound; i+=2){
+        for(long i=3; i<upper_bound; i+=2){
             //find the factor bound
             bound = Math.sqrt(i);
             divisible = false;
 
-            for(int j : primeList){
+            for(long j : primeList){
                 //if 'j' is divisible, it's not a prime
                 if(i%j == 0) {
                     divisible = true;

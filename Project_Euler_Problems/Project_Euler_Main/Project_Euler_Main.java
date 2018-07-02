@@ -7,8 +7,8 @@ import PE_33_to_48.*;
 public class Project_Euler_Main {
 
 	public static void main(String[] args) {
-		
-		PE_50 problem = new PE_50();
+
+		PE_41 problem = new PE_41();
 		problem.start();
 	}
 
