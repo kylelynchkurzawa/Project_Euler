@@ -1,8 +1,7 @@
 package Project_Euler_Main;
 
-import PE_01_to_16.*;
-import PE_17_to_32.*;
-import PE_33_to_48.*;
+import PE_01_to_25.*;
+import PE_26_to_50.*;
 
 public class Project_Euler_Main {
 
